@@ -33,7 +33,8 @@ const CustomTooltip: React.FC<CustomTooltipProps>  = ({ active, payload }) => {
 
 export default function Home() {
 
-  const maxAmount = Math.max(...data.map( (items) => items.amount ))
+  const maxAmount = Math.max(...data.map( (items) => items.amount ));
+  console.log("I am the highest value", maxAmount)
 
   return (
     <div className="w-full flex flex-col gap-y-8">
